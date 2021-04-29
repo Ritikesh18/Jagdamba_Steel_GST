@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="Jagdamba Steel GST Chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center_horizontal"
+        android:textSize="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Enter The Amount"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/txt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:textSize="24dp"
+        android:layout_below="@+id/txtView1">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_amount"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal"
+        android:text="Enter the Gst percent"
+        android:textSize="24dp"></TextView>
+
+    <EditText
+        android:id="@+id/txt_gst_percent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtView2"
+        android:layout_marginTop="-8dp"
+        android:gravity="center_horizontal"
+        android:textSize="24dp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/txt_total_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/txt_gst_percent">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_gst_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/txt_total_amount">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_cgst_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txt_gst_amount">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_sgst_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_cgst_amount"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt_sgst_amount"
+        android:layout_marginTop="20dp"
+        android:text="calculate"
+        android:textSize="24sp">
+
+    </Button>
+
+
+</RelativeLayout>
